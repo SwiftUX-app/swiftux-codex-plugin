@@ -1,5 +1,7 @@
 # SwiftUX for Codex
 
+<img src="plugins/swiftux/assets/logo.svg" alt="SwiftUX" width="96" />
+
 [SwiftUX](https://www.swiftux.app) is a catalog of production SwiftUI components (single views) and flows (multi-screen journeys). This plugin connects Codex to it, so that when you ask for a piece of UI, Codex finds the catalog items that fit, shows them to you as preview cards, and adapts the one you choose to your codebase.
 
 ## Install
@@ -24,8 +26,9 @@ The SwiftUX MCP server (`https://api.swiftux.app/mcp`), which provides these too
 ```
 .agents/plugins/marketplace.json   the marketplace: one plugin, "swiftux"
 plugins/swiftux/
-  .codex-plugin/plugin.json        the plugin manifest
+  .codex-plugin/plugin.json        the plugin manifest (name, listing text, logo, brand color)
   .mcp.json                        the SwiftUX MCP server
+  assets/logo.svg                  the logo and composer icon
 ```
 
 Releasing: raise `version` in `plugins/swiftux/.codex-plugin/plugin.json` and push. Installed copies pick it up with `codex plugin marketplace upgrade`.
