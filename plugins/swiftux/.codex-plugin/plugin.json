@@ -1,8 +1,14 @@
 {
   "name": "swiftux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Find, preview and adapt production SwiftUI components and flows from the SwiftUX catalog.",
-  "keywords": ["swiftui", "ios", "components", "ui", "mcp"],
+  "keywords": [
+    "swiftui",
+    "ios",
+    "components",
+    "ui",
+    "mcp"
+  ],
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "SwiftUX",
@@ -11,6 +17,9 @@
     "developerName": "SwiftUX",
     "category": "Design",
     "websiteURL": "https://www.swiftux.app",
+    "brandColor": "#22C55E",
+    "logo": "./assets/logo.svg",
+    "composerIcon": "./assets/logo.svg",
     "defaultPrompt": [
       "Add a paywall with a monthly/yearly toggle",
       "Build onboarding screens for a fitness app",
