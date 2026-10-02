@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "swiftux": {
+      "url": "https://api.swiftux.app/mcp"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+# SwiftUX for Codex
+
+[SwiftUX](https://www.swiftux.app) is a catalog of production SwiftUI components (single views) and flows (multi-screen journeys). This plugin connects Codex to it, so that when you ask for a piece of UI, Codex finds the catalog items that fit, shows them to you as preview cards, and adapts the one you choose to your codebase.
+
+## Install
+
+```
+codex plugin marketplace add SwiftUX-app/swiftux-codex-plugin
+codex plugin add swiftux@swiftux
+```
+
+Or, after adding the marketplace, open `/plugins` in Codex and install **SwiftUX** from there.
+
+## What you get
+
+The SwiftUX MCP server (`https://api.swiftux.app/mcp`), which provides these tools:
+
+- `search_catalog` returns every component or flow that fits the request, best first.
+- `show_picks` shows those options as interactive preview cards (an MCP App), with a summary of the request and why they fit.
+- `get_component` / `get_flow` and their `*_source` tools let Codex adapt the source you pick.
+
+## Layout
+
+```
+.agents/plugins/marketplace.json   the marketplace: one plugin, "swiftux"
+plugins/swiftux/
+  .codex-plugin/plugin.json        the plugin manifest
+  .mcp.json                        the SwiftUX MCP server
+```
+
+Releasing: raise `version` in `plugins/swiftux/.codex-plugin/plugin.json` and push. Installed copies pick it up with `codex plugin marketplace upgrade`.
+
+## Privacy
+
+The plugin sends your UI request (`ux_task`) to the SwiftUX API to search the catalog. It does not read your code to search, and it does not send your code anywhere.

@@ -1,0 +1,20 @@
+{
+  "name": "swiftux",
+  "interface": {
+    "displayName": "SwiftUX"
+  },
+  "plugins": [
+    {
+      "name": "swiftux",
+      "source": {
+        "source": "local",
+        "path": "./plugins/swiftux"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
+    }
+  ]
+}
