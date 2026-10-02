@@ -18,6 +18,20 @@ Restart Codex, then ask for one piece of UI, for example *"add a paywall with a 
 
 To update later: `codex plugin marketplace upgrade`.
 
+## Claude Code
+
+The same catalog, as a Claude Code plugin. Add the marketplace and install:
+
+```
+claude plugin marketplace add SwiftUX-app/swiftux-codex-plugin && claude plugin install swiftux@swiftux
+```
+
+Or load it from a checkout for one session: `claude --plugin-dir plugins/swiftux-claude`.
+
+It connects the same MCP server and adds a pane for `show_picks`, built on Claude Code's function hooks (early access): the picks as cards side by side, the next one peeking in at the edge, moved one card at a time with `h` / `l` or `‹` / `›`, like the Codex rail. Each card shows its picture (`image_url`, or `preview_url` when there is none), the name, author and use, a **Use** button (`1`–`6`) that puts the choice in your prompt, and a **View** link to the catalog. `/swiftux-picks` reopens the last picks.
+
+Pictures draw in terminals with the kitty graphics protocol (kitty, Ghostty), as PNG; other terminals and the desktop app show a link in their place. The plugin downloads them with `curl` from `media.swiftux.app`.
+
 ## What you get
 
 The SwiftUX MCP server (`https://api.swiftux.app/mcp`), which provides these tools:
@@ -29,14 +43,20 @@ The SwiftUX MCP server (`https://api.swiftux.app/mcp`), which provides these too
 ## Layout
 
 ```
-.agents/plugins/marketplace.json   the marketplace: one plugin, "swiftux"
+.agents/plugins/marketplace.json   the Codex marketplace: one plugin, "swiftux"
 plugins/swiftux/
   .codex-plugin/plugin.json        the plugin manifest (name, listing text, logo, brand color)
   .mcp.json                        the SwiftUX MCP server
   assets/logo.svg                  the logo and composer icon
+.claude-plugin/marketplace.json    the Claude Code marketplace: one plugin, "swiftux"
+plugins/swiftux-claude/
+  .claude-plugin/plugin.json       the plugin manifest, with the SwiftUX MCP server
+  hooks/register.tsx               the picks pane
+  types/index.d.ts                 the pane's state
+  tests/picks.test.ts              run with `claude plugin test plugins/swiftux-claude`
 ```
 
-Releasing: raise `version` in `plugins/swiftux/.codex-plugin/plugin.json` and push. Installed copies pick it up with `codex plugin marketplace upgrade`.
+Releasing: raise `version` in `plugins/swiftux/.codex-plugin/plugin.json` and push. Installed copies pick it up with `codex plugin marketplace upgrade`. For Claude Code, raise `version` in `plugins/swiftux-claude/.claude-plugin/plugin.json`; installed copies pick it up with `claude plugin marketplace update swiftux`.
 
 ## Privacy
 

@@ -1,1 +1,3 @@
 .DS_Store
+# Written by Claude Code at each load of the plugin
+plugins/swiftux-claude/.claude-plugin/types/

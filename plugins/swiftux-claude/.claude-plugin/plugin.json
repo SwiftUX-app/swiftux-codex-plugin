@@ -1,0 +1,13 @@
+{
+  "name": "swiftux",
+  "version": "1.0.0",
+  "description": "Find, preview and adapt production SwiftUI components and flows from the SwiftUX catalog, with the picks shown as image cards in a side-scrolling pane.",
+  "author": { "name": "SwiftUX", "url": "https://www.swiftux.app" },
+  "homepage": "https://www.swiftux.app",
+  "repository": "https://github.com/SwiftUX-app/swiftux-codex-plugin",
+  "keywords": ["swiftui", "ios", "components", "ui", "mcp"],
+  "types": "./types/index.d.ts",
+  "mcpServers": {
+    "swiftux": { "type": "http", "url": "https://api.swiftux.app/mcp" }
+  }
+}
