@@ -6,12 +6,17 @@
 
 ## Install
 
+One line in your terminal adds the marketplace and installs the plugin:
+
 ```
-codex plugin marketplace add SwiftUX-app/swiftux-codex-plugin
-codex plugin add swiftux@swiftux
+codex plugin marketplace add SwiftUX-app/swiftux-codex-plugin && codex plugin add swiftux@swiftux
 ```
 
-Or, after adding the marketplace, open `/plugins` in Codex and install **SwiftUX** from there.
+Or add the marketplace with `codex plugin marketplace add SwiftUX-app/swiftux-codex-plugin`, then open `/plugins` in Codex and install **SwiftUX** from there.
+
+Restart Codex, then ask for one piece of UI, for example *"add a paywall with a monthly/yearly toggle"*. `codex mcp list` should show `swiftux` as enabled.
+
+To update later: `codex plugin marketplace upgrade`.
 
 ## What you get
 
