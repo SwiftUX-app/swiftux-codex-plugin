@@ -1,6 +1,6 @@
 {
   "name": "swiftux",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Finds the SwiftUI components or flows that fit your UI task and adapts the one you pick to your design system. When nothing fits, it hands Codex the SwiftUX build guide instead.",
   "keywords": [
     "swiftui",
