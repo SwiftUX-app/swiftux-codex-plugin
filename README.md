@@ -2,7 +2,7 @@
 
 <img src="plugins/swiftux/assets/logo.svg" alt="SwiftUX" width="96" />
 
-[SwiftUX](https://www.swiftux.app) turns a UI request into production SwiftUI that fits your app. Ask for a piece of UI and Codex finds the components (single views) and flows (multi-screen journeys) in the SwiftUX catalog that fit, shows them to you as preview cards and adapts the one you pick to your design system. If nothing fits, Codex asks you one quick question to narrow things down, or it builds the UI itself, following the SwiftUI conventions every SwiftUX component uses.
+[SwiftUX](https://www.swiftux.app) turns a UI request into production SwiftUI that fits your app. Ask for a piece of UI and Codex finds the components (single views) and flows (multi-screen journeys) in the SwiftUX catalog that fit, shows them to you as preview cards and adapts the one you pick to your design system. If nothing fits, SwiftUX hands Codex its build guide instead, so Codex can build what you asked for from scratch.
 
 ## Install
 
