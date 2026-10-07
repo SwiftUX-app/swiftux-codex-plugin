@@ -1,5 +1,15 @@
 # SwiftUX for Codex
 
+> **Debug branch.** This branch is the debug build: it points at the Railway preview API (`https://swiftux-api-preview.up.railway.app/mcp`) and adds the picks demo. Never merge it into `main`.
+>
+> Install it next to the release plugin:
+>
+> ```
+> codex plugin marketplace add SwiftUX-app/swiftux-codex-plugin --ref debug && codex plugin add swiftux-debug@swiftux-debug
+> ```
+>
+> Restart Codex, then ask *"Run the SwiftUX picks demo"*: it calls `demo_picks`, which only the preview API registers (`MCP_DEMO=true`), and opens the picks cards with live catalog items. Pick up branch changes with `codex plugin marketplace upgrade swiftux-debug`.
+
 <img src="plugins/swiftux/assets/logo.svg" alt="SwiftUX" width="96" />
 
 [SwiftUX](https://www.swiftux.app) is a catalog of production SwiftUI components (single views) and flows (multi-screen journeys). This plugin connects Codex to it, so that when you ask for a piece of UI, Codex finds the catalog items that fit, shows them to you as preview cards, and adapts the one you choose to your codebase.

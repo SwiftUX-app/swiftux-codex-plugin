@@ -1,11 +1,11 @@
 {
-  "name": "swiftux",
+  "name": "swiftux-debug",
   "interface": {
-    "displayName": "SwiftUX"
+    "displayName": "SwiftUX (debug)"
   },
   "plugins": [
     {
-      "name": "swiftux",
+      "name": "swiftux-debug",
       "source": {
         "source": "local",
         "path": "./plugins/swiftux"

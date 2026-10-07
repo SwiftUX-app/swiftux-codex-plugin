@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "swiftux": {
-      "url": "https://api.swiftux.app/mcp"
+      "url": "https://swiftux-api-preview.up.railway.app/mcp"
     }
   }
 }

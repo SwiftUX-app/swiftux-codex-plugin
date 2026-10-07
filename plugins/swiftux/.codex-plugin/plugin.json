@@ -1,7 +1,7 @@
 {
-  "name": "swiftux",
-  "version": "1.0.1",
-  "description": "Find, preview and adapt production SwiftUI components and flows from the SwiftUX catalog.",
+  "name": "swiftux-debug",
+  "version": "1.0.1-debug",
+  "description": "Debug build of the SwiftUX plugin. Uses the preview API and adds the picks demo.",
   "keywords": [
     "swiftui",
     "ios",
@@ -11,9 +11,9 @@
   ],
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "SwiftUX",
-    "shortDescription": "Production SwiftUI components and flows, matched to what you are building",
-    "longDescription": "Ask for one piece of UI and Codex searches the SwiftUX catalog, shows you every component or flow that fits as preview cards, and adapts the one you pick to your codebase.",
+    "displayName": "SwiftUX (debug)",
+    "shortDescription": "Debug build: preview API and the picks demo",
+    "longDescription": "Debug build of SwiftUX for testing. It talks to the Railway preview API instead of production, and it adds the picks demo: ask \"Run the SwiftUX picks demo\" to open the picks cards with live catalog items, no search needed. Not for release.",
     "developerName": "SwiftUX",
     "category": "Design",
     "websiteURL": "https://www.swiftux.app",
@@ -21,9 +21,9 @@
     "logo": "./assets/logo.svg",
     "composerIcon": "./assets/logo.svg",
     "defaultPrompt": [
+      "Run the SwiftUX picks demo",
       "Add a paywall with a monthly/yearly toggle",
-      "Build onboarding screens for a fitness app",
-      "Add a settings screen with grouped toggles"
+      "Build onboarding screens for a fitness app"
     ]
   }
 }
