@@ -1,7 +1,7 @@
 {
   "name": "swiftux",
-  "version": "1.0.1",
-  "description": "Find, preview and adapt production SwiftUI components and flows from the SwiftUX catalog.",
+  "version": "1.0.2",
+  "description": "Finds the SwiftUI component or flow that fits your UI task and adapts it to your design system, or builds it from scratch following SwiftUX conventions when nothing fits.",
   "keywords": [
     "swiftui",
     "ios",
@@ -12,8 +12,8 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "SwiftUX",
-    "shortDescription": "Production SwiftUI components and flows, matched to what you are building",
-    "longDescription": "Ask for one piece of UI and Codex searches the SwiftUX catalog, shows you every component or flow that fits as preview cards, and adapts the one you pick to your codebase.",
+    "shortDescription": "Turn a UI request into production SwiftUI that fits your app",
+    "longDescription": "SwiftUX turns a UI request into production SwiftUI that fits your app.\n\nDescribe the piece of UI you need, like a paywall with a monthly/yearly toggle, an onboarding flow or a settings screen, and Codex searches the SwiftUX catalog for the components and flows that fit. Every match shows up as a preview card right in the chat. Pick one, and Codex adapts it to your design system, using your colors, fonts, spacing and the views you already have.\n\nIf nothing in the catalog fits, Codex doesn't guess. It asks you one quick question to narrow things down, or it builds the UI itself, following the same SwiftUI conventions every SwiftUX component uses.\n\nAsk for one piece of UI at a time. If you want a whole screen or app, Codex asks you which part to start with.",
     "developerName": "SwiftUX",
     "category": "Design",
     "websiteURL": "https://www.swiftux.app",
