@@ -23,7 +23,7 @@ To update later: `codex plugin marketplace upgrade`.
 The SwiftUX MCP server (`https://api.swiftux.app/mcp`), which provides these tools:
 
 - `search_catalog` returns every component or flow that fits the request, best first.
-- `show_picks` shows those options as interactive preview cards (an MCP App), with a summary of the request and why they fit.
+- `show_picks` shows those options as interactive preview cards (an MCP App), with a summary of the request and why they fit. Hover a card and choose **Add to chat** to hand it to Codex; the cards use the swiftux.app colors and follow your Codex light or dark theme.
 - `get_component` / `get_flow` and their `*_source` tools let Codex adapt the source you pick.
 
 ## Layout
