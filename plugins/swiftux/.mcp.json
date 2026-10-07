@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "swiftux": {
+    "swiftux-debug": {
       "url": "https://swiftux-api-preview.up.railway.app/mcp"
     }
   }

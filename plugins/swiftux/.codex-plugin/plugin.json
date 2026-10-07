@@ -1,6 +1,6 @@
 {
   "name": "swiftux-debug",
-  "version": "1.0.1-debug",
+  "version": "1.0.1-debug.1",
   "description": "Debug build of the SwiftUX plugin. Uses the preview API and adds the picks demo.",
   "keywords": [
     "swiftui",

@@ -9,6 +9,8 @@
 > ```
 >
 > Restart Codex, then ask *"Run the SwiftUX picks demo"*: it calls `demo_picks`, which only the preview API registers (`MCP_DEMO=true`), and opens the picks cards with live catalog items. Pick up branch changes with `codex plugin marketplace upgrade swiftux-debug`.
+>
+> The MCP server is named `swiftux-debug`, not `swiftux`, so it loads next to the release plugin. Codex keeps one server per name, and a shared name meant production's tools (no `demo_picks`, the production rate limit) replaced the preview ones.
 
 <img src="plugins/swiftux/assets/logo.svg" alt="SwiftUX" width="96" />
 
